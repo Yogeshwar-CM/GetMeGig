@@ -1,0 +1,9 @@
+.SideIcons {
+  position: absolute;
+  left: 0;
+  top: 45%;
+}
+
+.SideIcons > ul {
+  list-style: none;
+}

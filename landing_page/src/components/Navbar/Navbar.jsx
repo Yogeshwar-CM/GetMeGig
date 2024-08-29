@@ -1,20 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <div className="Navbar oswald">
       <h1 className="LOGO">GetMeGig</h1>
-      <div className="menu-toggle" onClick={toggleMenu}>
-        <i className="fas fa-bars"></i> 
-      </div>
-      <ul className={menuOpen ? "show" : ""}>
+      <ul>
         <li>ABOUT</li>
         <li>SERVICES</li>
         <li>CONTACT</li>

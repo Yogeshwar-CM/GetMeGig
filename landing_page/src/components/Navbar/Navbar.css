@@ -1,0 +1,64 @@
+.Navbar {
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--col1);
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  display: flex;
+}
+
+.LOGO {
+  font-size: var(--head1);
+  margin-left: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.LOGO:hover {
+  color: var(--col3);
+}
+.Navbar ul {
+  list-style: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 2.5rem;
+  gap: 2.25rem;
+  font-weight: 100;
+}
+.cta0 {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cta0:hover {
+  transform: scale(0.9);
+}
+.Navbar > ul,
+.rsm {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: var(--p1);
+}
+.Navbar > ul > li {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.Navbar > ul > li:hover {
+  color: var(--col4);
+}
+.CTA {
+  transition: all 0.3s;
+  font-size: var(--p2);
+  cursor: pointer;
+}
+.CTA:hover {
+  transform: scale(0.9);
+}
+.rsm {
+  gap: 1.5rem;
+  font-weight: 100;
+  margin-right: 2rem;
+}
+

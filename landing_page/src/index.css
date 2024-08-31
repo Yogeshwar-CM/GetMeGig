@@ -6,7 +6,7 @@
   --col4: #f1e2ad;
   --head1: clamp(1.5rem, 0.964rem + 1.429vw, 2.25rem);
   --p1: clamp(1rem, 0.893rem + 0.286vw, 1.15rem);
-  --p2: 1rem;
+  --p2: 0.85rem;
 }
 
 body {
@@ -42,6 +42,16 @@ body {
 
 button {
   border: none;
+  border-radius: 1px;
   background: white;
   padding: 0.5rem 1rem;
+}
+.head1 {
+  font-size: var(--head1);
+}
+.p1 {
+  font-size: var(--p1);
+}
+.p2 {
+  font-size: var(--p2);
 }

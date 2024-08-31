@@ -1,3 +1,30 @@
 .Home {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-home {
+  display: flex;
+  width: 88vw;
+  justify-content: space-evenly;
+}
+.main-img {
+  width: 32vw;
+}
+.rs-home {
+  width: 50vw;
+}
+.contact-btn {
+  margin-top: 1rem;
+  background: var(--col2);
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  font-weight: 500;
+  font-size: var(--p2);
+}
+.contact-btn:hover {
+  transform: scale(0.9);
 }

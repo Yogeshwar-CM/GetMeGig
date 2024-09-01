@@ -12,6 +12,7 @@ import ic from "../../assets/ic.svg";
 import cw from "../../assets/cw.svg";
 import gd from "../../assets/gd.svg";
 import ts from "../../assets/ts.svg";
+import Contact from "../../components/Contact/Contact";
 
 export default function Home() {
   return (
@@ -42,9 +43,9 @@ export default function Home() {
         </div>
       </WhenInView>
       <WhenInView>
-        <div className="services">
+        <div className="services" id="services">
           <h2 className="oswald head1">SERVICES WE OFFER</h2>
-          <div className="grp1">
+          <div className="grp1 lato">
             <div className="box">
               <img
                 src={wd}
@@ -86,7 +87,8 @@ export default function Home() {
                 src={ec}
                 alt="E-Commerce Development Services for Online Businesses"
               />
-              E-commerce<br /> Development
+              E-commerce
+              <br /> Development
             </div>
             <div className="box">
               <img
@@ -104,6 +106,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </WhenInView>
+      <WhenInView>
+        <Contact />
       </WhenInView>
     </div>
   );

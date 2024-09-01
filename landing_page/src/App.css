@@ -1,9 +1,10 @@
 .main-home {
   display: flex;
   width: 88vw;
+  align-items: center;
   margin-inline: auto;
-  margin-top: 14%;
   justify-content: space-evenly;
+  height: 95vh;
 }
 .main-img {
   width: 32vw;
@@ -24,10 +25,10 @@
   transform: scale(0.9);
 }
 .services {
-  margin-top: 8rem;
   width: 100vw;
   display: flex;
   padding-top: 2rem;
+  height: 80vh;
   padding-bottom: 2rem;
   background-color: white;
   justify-content: space-around;
@@ -62,5 +63,49 @@
 .box:hover {
   font-weight: 700;
   box-shadow: rgba(86, 69, 62, 0.3) 0px 1px 2px 0px,
-              rgba(86, 69, 62, 0.15) 0px 2px 6px 2px;
+    rgba(86, 69, 62, 0.15) 0px 2px 6px 2px;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  align-items: center;
+  margin-bottom: 7rem;
+  margin-inline: auto;
+
+  gap: 10rem;
+  width: 80vw;
+  height: fit-content;
+}
+
+.lsc {
+  width: 30rem;
+}
+.contact > form {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.75rem;
+  display: flex;
+  border-radius: 3px;
+  border-radius: 0.2rem;
+  height: 40vh;
+  background-color: var(--col1);
+  width: 32vw;
+  justify-content: center;
+}
+.contact > form > input,
+.contact > form > textarea {
+  width: 90%;
+  border-radius: 1px;
+  background-color: var(--col2);
+  height: 1.5rem;
+  font-size: var(--p2);
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+.contact > form > textarea {
+  height: 5rem;
 }

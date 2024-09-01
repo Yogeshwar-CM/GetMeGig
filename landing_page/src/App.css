@@ -1,13 +1,8 @@
-.Home {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .main-home {
   display: flex;
   width: 88vw;
+  margin-inline: auto;
+  margin-top: 14%;
   justify-content: space-evenly;
 }
 .main-img {
@@ -27,4 +22,45 @@
 }
 .contact-btn:hover {
   transform: scale(0.9);
+}
+.services {
+  margin-top: 8rem;
+  width: 100vw;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+.grp1 {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.box {
+  height: 12rem;
+  width: 12rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-weight: 500;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.box > img {
+  width: 6.1rem;
+}
+.box:hover {
+  font-weight: 700;
+  box-shadow: rgba(86, 69, 62, 0.3) 0px 1px 2px 0px,
+              rgba(86, 69, 62, 0.15) 0px 2px 6px 2px;
 }

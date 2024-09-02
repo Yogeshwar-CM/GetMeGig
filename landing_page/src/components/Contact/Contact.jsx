@@ -1,7 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 
 export default function Contact() {
+  const [form, setForm] = useState({
+    name: "",
+    contactNumber: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+  const [showToast, setShowToast] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      from_name: form.name,
+      contact_number: form.contactNumber,
+      from_email: form.email,
+      message: form.message,
+    };
+
+    emailjs
+      .send(
+        "service_l3v0d8b",
+        "template_rhjesr7",
+        templateParams,
+        "ToT9LvxmJbhLw1YrA"
+      )
+      .then(
+        (response) => {
+          setStatus("Message sent successfully!");
+          setShowToast(true);
+          setTimeout(() => setShowToast(false), 3000); // Hide toast after 3 seconds
+          setForm({
+            name: "",
+            contactNumber: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setStatus("Failed to send message. Please try again.");
+          setShowToast(true);
+          setTimeout(() => setShowToast(false), 3000); // Hide toast after 3 seconds
+          console.error("Failed to send email:", error);
+        }
+      );
+  };
+
   return (
     <div className="arch_contact_us_duplicate" id="contact">
       <div className="responsive-container-block big-container">
@@ -26,26 +82,39 @@ export default function Contact() {
             id="i6df"
           >
             <div className="form-wrapper">
-              <input
-                className="input input-element lato"
-                name="Name"
-                placeholder="Name"
-              />
-              <input
-                className="input input-element lato"
-                name="Contact Number"
-                placeholder="Contact Number"
-              />
-              <input
-                className="input input-element lato"
-                name="Email"
-                placeholder="Email"
-              />
-              <textarea
-                className="textinput input-element lato"
-                placeholder="Message"
-              ></textarea>
-              <button className="button oswald">SEND</button>
+              <form onSubmit={handleSubmit}>
+                <input
+                  className="input input-element lato"
+                  name="name"
+                  placeholder="Name"
+                  value={form.name}
+                  onChange={handleChange}
+                />
+                <input
+                  className="input input-element lato"
+                  name="contactNumber"
+                  placeholder="Contact Number"
+                  value={form.contactNumber}
+                  onChange={handleChange}
+                />
+                <input
+                  className="input input-element lato"
+                  name="email"
+                  placeholder="Email"
+                  value={form.email}
+                  onChange={handleChange}
+                />
+                <textarea
+                  className="textinput input-element lato"
+                  name="message"
+                  placeholder="Message"
+                  value={form.message}
+                  onChange={handleChange}
+                ></textarea>
+                <button className="button oswald" type="submit">
+                  SEND
+                </button>
+              </form>
             </div>
             <div className="social-media-icon-container">
               <div className="icon-block social-icon">

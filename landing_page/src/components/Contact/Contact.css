@@ -13,14 +13,8 @@
 }
 
 .arch_contact_us_duplicate .text-blk {
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  margin: 0;
+  padding: 0;
   line-height: 25px;
 }
 
@@ -28,16 +22,10 @@
   min-height: 75px;
   height: fit-content;
   width: 100%;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
+  margin: 0 auto;
   justify-content: flex-start;
 }
 
@@ -49,11 +37,8 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-top: 0px;
-  padding-right: 50px;
-  padding-bottom: 0px;
-  padding-left: 50px;
-  background-color: #fdfcea;
+  padding: 0 50px;
+  background-color: var(--col3);
 }
 
 .arch_contact_us_duplicate .responsive-container-block.container {
@@ -64,10 +49,7 @@
 .arch_contact_us_duplicate .text-blk.section-head {
   font-size: 60px;
   line-height: 65px;
-  margin-top: 0px;
-  margin-right: 0px;
   margin-bottom: 24px;
-  margin-left: 0px;
 }
 
 .arch_contact_us_duplicate .text-blk.section-subhead {
@@ -78,68 +60,21 @@
 
 .arch_contact_us_duplicate .input {
   width: 100%;
-  margin-top: 0px;
-  margin-right: 0px;
   margin-bottom: 15px;
-  margin-left: 0px;
   height: 54px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-width: 2px;
-  border-right-width: 2px;
-  border-bottom-width: 2px;
-  border-left-width: 2px;
-  border-top-style: none;
-  border-right-style: none;
-  border-bottom-style: none;
-  border-left-style: none;
-  border-top-color: #767676;
-  border-right-color: #767676;
-  border-bottom-color: #767676;
-  border-left-color: #767676;
-  border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  padding-top: 1px;
-  padding-right: 16px;
-  padding-bottom: 1px;
-  padding-left: 16px;
+  border-radius: 5px;
+  border: 2px solid #767676;
+  padding: 1px 16px;
   font-size: 16px;
 }
 
 .arch_contact_us_duplicate .textinput {
   width: 100%;
   height: 125px;
-  margin-top: 0px;
-  margin-right: 0px;
   margin-bottom: 27px;
-  margin-left: 0px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-top-style: none;
-  border-right-style: none;
-  border-bottom-style: none;
-  border-left-style: none;
-  border-top-color: #767676;
-  border-right-color: #767676;
-  border-bottom-color: #767676;
-  border-left-color: #767676;
-  border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
+  border: 1px solid #767676;
   font-size: 16px;
-  padding-top: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
-  padding-left: 16px;
+  padding: 16px;
 }
 
 .arch_contact_us_duplicate .button {
@@ -147,38 +82,14 @@
   min-width: 240px;
   font-size: 16px;
   color: white;
-  border-top-width: 2px;
-  border-right-width: 2px;
-  border-bottom-width: 2px;
-  border-left-width: 2px;
-  border-top-style: none;
-  border-right-style: none;
-  border-bottom-style: none;
-  border-left-style: none;
-  border-top-color: #767676;
-  border-right-color: #767676;
-  border-bottom-color: #767676;
-  border-left-color: #767676;
-  border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  margin-top: 0px;
-  margin-right: 0px;
+  border: 2px solid #767676;
   margin-bottom: 60px;
-  margin-left: 0px;
-  background-color: #b0ab4d;
+  background-color: var(--col1);
 }
 
 .arch_contact_us_duplicate .form-wrapper {
-  border-bottom-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: #f3f2cf;
-  margin-top: 0px;
-  margin-right: 0px;
+  border-bottom: 4px solid var(--col2);
   margin-bottom: 60px;
-  margin-left: 0px;
 }
 
 .arch_contact_us_duplicate .social-media-icon-container {
@@ -188,11 +99,11 @@
 }
 
 .arch_contact_us_duplicate .input-element {
-  background-color: #f3f2cf;
+  background-color: white;
 }
 
 .arch_contact_us_duplicate .icon-block.social-icon {
-  fill: #b0ab4d;
+  fill: var(--col1);
 }
 
 @media (max-width: 1024px) {
@@ -209,18 +120,12 @@
 @media (max-width: 768px) {
   .arch_contact_us_duplicate
     .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-ipadp-6.wk-desk-5 {
-    margin-top: 0px;
-    margin-right: 0px;
     margin-bottom: 80px;
-    margin-left: 0px;
   }
 
   .arch_contact_us_duplicate
     .responsive-cell-block.wk-mobile-12.wk-ipadp-6.wk-desk-5.wk-tab-10 {
-    margin-top: 0px;
-    margin-right: 0px;
     margin-bottom: 80px;
-    margin-left: 0px;
     text-align: center;
   }
 
@@ -230,18 +135,12 @@
 
   .arch_contact_us_duplicate .responsive-container-block.container {
     justify-content: space-evenly;
-    margin-top: 80px;
-    margin-right: 0px;
-    margin-bottom: 80px;
-    margin-left: 0px;
+    margin: 80px 0;
   }
 
   .arch_contact_us_duplicate
     .responsive-cell-block.wk-mobile-12.wk-desk-5.wk-tab-10.wk-ipadp-5 {
-    margin-top: 0px;
-    margin-right: 0px;
     margin-bottom: 80px;
-    margin-left: 0px;
   }
 }
 
@@ -252,10 +151,7 @@
   }
 
   .arch_contact_us_duplicate .responsive-container-block.big-container {
-    padding-top: 0px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
+    padding: 0 20px;
   }
 
   .arch_contact_us_duplicate .input {
@@ -264,53 +160,32 @@
 
   .arch_contact_us_duplicate
     .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-ipadp-6.wk-desk-5 {
-    margin-top: 0px;
-    margin-right: 0px;
     margin-bottom: 80px;
-    margin-left: 0px;
   }
 
   .arch_contact_us_duplicate
     .responsive-cell-block.wk-mobile-12.wk-ipadp-6.wk-desk-5.wk-tab-10 {
     text-align: left;
-    padding-top: 0px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
+    padding: 0 20px;
   }
 
   .arch_contact_us_duplicate .responsive-container-block.big-container {
-    padding-top: 0px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    padding-left: 30px;
+    padding: 0 30px;
   }
 
   .arch_contact_us_duplicate
     .responsive-cell-block.wk-mobile-12.wk-desk-5.wk-tab-10.wk-ipadp-5 {
-    padding-top: 0px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    padding-left: 20px;
+    padding: 0 20px;
   }
 
   .arch_contact_us_duplicate .button {
     width: 100%;
-  }
-
-  .arch_contact_us_duplicate .button {
-    margin-top: 0px;
-    margin-right: 0px;
     margin-bottom: 40px;
-    margin-left: 0px;
     height: 50px;
   }
 
   .arch_contact_us_duplicate .form-wrapper {
-    margin-top: 0px;
-    margin-right: 0px;
     margin-bottom: 40px;
-    margin-left: 0px;
   }
 
   .arch_contact_us_duplicate .icon-block {
@@ -318,13 +193,10 @@
     height: 25px;
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap");
 
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 

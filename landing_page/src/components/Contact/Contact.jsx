@@ -10,11 +10,15 @@ export default function Contact() {
             className="responsive-cell-block wk-mobile-12 wk-desk-5 wk-tab-10 wk-ipadp-5"
             id="ih6s"
           >
-            <p className="text-blk lato section-head">Get in touch dolor sit</p>
+            <p className="text-blk lato section-head">Contact Us</p>
             <p className="text-blk section-subhead lato">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam,
+              Need expert assistance or have questions about our services? Get
+              in touch with us today! Whether you're looking for assignment
+              help, guidance on your academic projects, or just want to learn
+              more about how we can support your educational journey, we're here
+              to help. Our team of experienced professionals is dedicated to
+              providing top-quality solutions tailored to your needs. Contact us
+              now and take the first step towards academic success!
             </p>
           </div>
           <div

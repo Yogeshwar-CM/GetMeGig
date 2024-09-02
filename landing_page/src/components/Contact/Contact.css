@@ -55,7 +55,7 @@
 .arch_contact_us_duplicate .text-blk.section-subhead {
   font-size: 14px;
   line-height: 18px;
-  color: #7e7e7e;
+  color: var(--col2);
 }
 
 .arch_contact_us_duplicate .input {

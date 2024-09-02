@@ -109,3 +109,33 @@
 .contact > form > textarea {
   height: 5rem;
 }
+
+@media (max-width: 767px) {
+  .main-home {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 80vw;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    height: auto;
+  }
+  .rs-home {
+    width: 100%;
+  }
+  .services {
+    flex-direction: column;
+    height: auto;
+  }
+  .grp1 {
+    width: 100vw;
+    gap: 0.9rem;
+  }
+  .box {
+    height: 10rem;
+    width: 10rem;
+  }
+  .box > img {
+    width: 5rem;
+  }
+}

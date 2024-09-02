@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export const fadeInUp = {
   hidden: {
     opacity: 0,
-    y: 40,
+    y: 44,
   },
   visible: {
     opacity: 1,

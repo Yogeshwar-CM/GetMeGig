@@ -21,7 +21,7 @@ export default function Home() {
       <CustomCursor />
       {/* <SideIcons /> */}
       <WhenInView>
-        <div className="main-home">
+        <div className="main-home" id="about">
           <img src={support} alt="illustration" className="main-img" />
           <div className="rs-home">
             <h1 className="oswald head1">YOUR IT & FREELANCING PARTNER</h1>
@@ -38,7 +38,9 @@ export default function Home() {
               reality. With our expertise, you can focus on growing your
               business while we handle the rest.
             </p>
-            <button className="contact-btn">CONTACT US</button>
+            <button className="contact-btn">
+              <a href="#contact">CONTACT US</a>
+            </button>
           </div>
         </div>
       </WhenInView>
@@ -108,7 +110,7 @@ export default function Home() {
         </div>
       </WhenInView>
       <WhenInView>
-        <Contact />
+        <Contact id="contact" />
       </WhenInView>
     </div>
   );
